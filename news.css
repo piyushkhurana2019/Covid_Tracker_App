@@ -15,7 +15,6 @@
 .Header{
     padding: 20px;
     padding-left: 30px;
-
 }
 
 .Header a{
@@ -25,6 +24,10 @@
     margin-left: 25px;
     display: inline-block;
     width: 99%;
+}
+
+.Header a:hover{
+    color: rgb(1, 1, 190);
 }
 
 .card2{
@@ -44,7 +47,7 @@
     position: absolute;
 }
 
-#indexid2{
+.index2{
     right: 30px;
     position: absolute;
     font-size: 200%;
@@ -54,7 +57,7 @@
 .btnnav{
     border: 2px solid black;
     border-radius: 12px;
-    margin-right: 12px;
+    margin-right: 22px;
     background-color: grey;
 }
 
@@ -63,4 +66,13 @@
     text-decoration: none;
     padding: 10px;
     padding-top: 5px;
+}
+
+.btnnav:hover{
+   background-color: rgb(105, 110, 114);
+}
+
+.btnnav{
+    width: 100px;
+    height: 40px;
 }

@@ -20,12 +20,12 @@ xhr.onload = function () {
         articles.forEach(function(element,index){
             
                 let news=`<div class="card">
-                <div class="Header" onclick="togglehide()">
+                <div class="Header" onclick="togglehide(${index})">
                 <span class="index" id="indexid"> ${index+1}) </span>
               
                     <a data-bs-toggle="collapse" href="#collapseExample${index}" aria-expanded="false" aria-controls="collapseExample">
                         ${element["title"]}
-                        <span class="index2" id="indexid2"> &#8964; </span>
+                        <span class="index2" id="indexid${index}"> &#8964; </span>
                     </a>
 
               
@@ -55,8 +55,8 @@ xhr.onload = function () {
 
 xhr.send();
 
-function togglehide(){
-    let hide = document.getElementById('indexid2');
+function togglehide(index){
+    let hide = document.getElementById(`indexid${index}`);
     if(hide.style.display != 'none')
     hide.style.display = 'none';
     else
